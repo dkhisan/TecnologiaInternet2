@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício pág 34 B</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		function changeBgColor(arg) {
+			if(arg === 1) {
+				document.getElementById('lv').style.backgroundColor = "#0000ff";
+				document.getElementById('lv').style.color = "#fff";
+				document.getElementById('pg').style.backgroundColor = "#fff";
+			} else {
+				document.getElementById('lv').style.backgroundColor = "#fff";
+				document.getElementById('lv').style.color = "#000";
+				document.getElementById('pg').style.backgroundColor = "#00ff00";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício pág 34 B</span><span class="btns" onclick="location.href='p35.html'">Próximo</span><span class="btns" onclick="location.href='p34a.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Crie uma tabela contendo o título de alguns livros em uma coluna e a quantidade de páginas em outra. Ao clicar na coluna com o nome "Livro", altere a cor do plano de fundo das células dessa coluna para azul. Ao clicar na coluna "Páginas", altere as cores das células dessa coluna para verde. Uma coluna não pode ficar pintada quando a outra estiver.
+			</div>
+			<div class="section">
+				<div class="list">
+					<table>
+						<tr>
+							<th onclick="changeBgColor(1)">Livro</th>
+							<th onclick="changeBgColor(2)">Páginas</th>
+						</tr>
+						<tr>
+							<td id="lv">The Dunwich Horror<br>The Case of Charles Dexter Ward<br>The Call of Cthulhu</td>
+							<td id="pg">110<br>176<br>48</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício 12</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		var p;
+
+		window.onload = function() {
+			p = document.getElementsByTagName('p');
+		}
+		
+		function displayDate() {
+			p[0].innerHTML = Date();
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício 12</span><span class="btns" onclick="location.href='e13.html'">Próximo</span><span class="btns" onclick="location.href='e11.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Use o DOM para atribuir um evento onclick ao elemento &lt;button&gt;. Clicando no botão deve ativar a função "displayDate()".
+			</div>
+			<div class="section">
+				<button onclick="displayDate();">Mostrar data</button>
+				<p></p>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

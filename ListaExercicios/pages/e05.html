@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício 05</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		var stat = false;
+
+		function active() {
+			if(!stat) {
+				var lbl1 = document.getElementById('author').innerHTML;
+				var lbl2 = " Bem vindo a disciplina de Tecnologias para Internet II";
+				var text = lbl1.concat(lbl2);
+
+				document.getElementsByTagName('p')[0].innerHTML = text;
+				stat = true;
+			} else {
+				document.getElementsByTagName('p')[0].innerHTML = "";
+				stat = false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício 05</span><span class="btns" onclick="location.href='e06.html'">Próximo</span><span class="btns" onclick="location.href='e04.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Use o DOM para encontrar um elemento e colocar nele o texto a seguir, concatenado com o título da página: "Bem vindo a disciplina de Tecnologia para Internet II"
+			</div>
+			<div class="section">
+				<span class="btna" onclick="active();">Ativar/desativ</span>
+				<p></p>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

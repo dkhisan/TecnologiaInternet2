@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício pág 70 B</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		function showImage(id) {
+			if(id == 1) {
+				document.getElementsByTagName('div')[5].innerHTML = '<img src="../assets/img/hq-cityscapes_skylines_bridges.jpg">';
+			} else if(id == 2) {
+				document.getElementsByTagName('div')[5].innerHTML = '<img src="../assets/img/hq-dark.jpg">';
+			} else {
+				document.getElementsByTagName('div')[5].innerHTML = '<img src="../assets/img/hq-nasa-53884.jpg">';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício pág 70 B</span><span class="btns" onclick="location.href='p70a.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Crie uma página contendo 3 miniaturas de imagens e uma div. Ao passar o mouse sobre cada imagem, a imagem deve aparecer no seu tamanho original na div.
+			</div>
+			<div class="section">
+				<img src="../assets/img/thumb-cityscapes_skylines_bridges.jpg" onmouseover="showImage(1)"><img src="../assets/img/thumb-dark.jpg" onmouseover="showImage(2)"><img src="../assets/img/thumb-nasa-53884.jpg" onmouseover="showImage(3)">
+				<div>
+				</div>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

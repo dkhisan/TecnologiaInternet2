@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício pág 35</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		var limit = 10;
+		var count =  0;
+
+		function addItem(itmname) {
+			document.getElementById('itmname').value = '';
+
+			if(!(itmname === '')) {
+				if(count == limit) {
+					alert('Não pode adicionar mais itens. Chegou no limite!!');
+				} else {
+					var nitm = document.createElement('li');
+
+					nitm.innerHTML = itmname.trim();
+					document.getElementById('itmlist').appendChild(nitm);
+					count++;
+				}
+			} else {
+				alert('O nome do item não pode ser vazio');
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício pág 35</span><span class="btns" onclick="location.href='p69a.html'">Próximo</span><span class="btns" onclick="location.href='p34b.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Crie um formulário com um campo de texto e um botão. Nesse campo de texto, o usuário deve digitar o item de uma lista de compras. Ao clicar no botão, o item deve ser exibido em uma lista ordenada (&lt;ol&gt;), logo abaixo do formulário. Após clicar no botão, limpe os campo de texto (ex: atribua vazio à propriedade value).
+			</div>
+			<div class="section">
+				<form method="post">
+					Nome do item <input type="text" id="itmname"><br><br>
+					<span class="btna" style="margin: 0px;" onclick="addItem(itmname.value)">Enviar</span>
+				</form>
+				<div class="list">
+					<ol id="itmlist">
+					</ol>
+				</div>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

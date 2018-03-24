@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício 08</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		var stat = false;
+
+		function active() {
+			if(!stat) {
+				var p = document.getElementsByTagName('p');
+
+				for(var i = 0; i < p.length; i++) {
+					if(i % 2 == 0) {
+						document.getElementsByTagName('p')[i].style.textAlign = "left";
+					} else {
+						document.getElementsByTagName('p')[i].style.textAlign = "right";
+					}
+				}
+
+				stat = true;
+			} else {
+				var p = document.getElementsByTagName('p');
+
+				for(var i = 0; i < p.length; i++) {
+					document.getElementsByTagName('p')[i].style.textAlign = "center";
+				}
+
+				stat = false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício 08</span><span class="btns" onclick="location.href='e09.html'">Próximo</span><span class="btns" onclick="location.href='e07.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Use o DOM HTML para alinhar o texto de &lt;p&gt;.
+			</div>
+			<div class="section">
+				<span class="btna" onclick="active();">Ativar/desativ</span>
+				<p>Lorem ipsum dolor sit amet, in fugit ceteros pro. Veri iriure minimum in sea. Has habeo impetus inimicus ad, vix ex quando epicuri repudiandae, eos ei atqui aperiam labores. Pro cetero saperet id.</p>
+				
+				<p>Persecuti voluptaria has ut, sit facete causae corpora id. Vel elit altera splendide ex, dicat dicam verear sea ei. Aeque eligendi an mei, no per posse causae antiopam. Cu per debet solet facilisis, cum quot diceret honestatis ut, sea fugit regione ut.</p>
+
+				<p>No discere patrioque mea, id dicunt patrioque eos, ei vix inermis salutandi. Id sed mediocrem signiferumque, mei affert malorum sententiae no. Adhuc eligendi an sed, qui ei delectus gloriatur. Id odio molestie sea, qui harum vocibus ea. Ad vis solum incorrupte, et elit clita partiendo per, essent evertitur pri ut.</p>
+
+				<p>Graeco maiorum voluptua ei vix, eruditi pericula at qui. Has ut menandri voluptaria, case mazim ignota vel cu. Ea mea primis doming perfecto, cu wisi dicit consulatu sea, ea mel agam suscipiantur. Mea dictas insolens at, tritani omittam gubergren duo ut, at vidit ludus accommodare mei. Sit no menandri gloriatur, ei mucius equidem ceteros has.</p>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

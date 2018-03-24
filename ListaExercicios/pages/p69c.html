@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício pág 69 C</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		let a = false;
+
+		function grow() {
+			if(!a) {
+				document.getElementById('img-c').src = "../assets/img/adult.jpg";
+				document.getElementById('grow').removeAttribute("onclick");
+				document.getElementById('grow').style.cursor = "auto";
+				document.getElementById('grow').style.backgroundColor = "#7abbdb";
+				document.getElementById('grow').style.color = "#fff";
+				console.log('Imagem trocada com sucesso!');
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício pág 69 C</span><span class="btns" onclick="location.href='p70a.html'">Próximo</span><span class="btns" onclick="location.href='p69b.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Crie uma página com uma imagem de uma criança (ex: "crianca.jpg") e um botão "Crescer". Crie uma função chamada trocar de Imagem. Nessa função, altere a propriedade 'src' da imagem para "adulto.jpg". Chame a função trocar Imagem no onclick do botão "Crescer". Escreva ainda um log no console com a mensagem "Imagem trocada com sucesso!".
+			</div>
+			<div class="section">
+				<span class="btna" id="grow" onclick="grow()">Crescer</span><br><br>
+				<img src="../assets/img/kid.jpg" width="500" height="500" id="img-c">
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

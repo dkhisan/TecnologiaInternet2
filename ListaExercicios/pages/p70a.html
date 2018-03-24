@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício pág 70 A</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		function resize(s) {
+			document.getElementById('img-r').width  = s;
+			document.getElementById('img-r').height = s;
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício pág 70 A</span><span class="btns" onclick="location.href='p70b.html'">Próximo</span><span class="btns" onclick="location.href='p69c.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Crie uma página contendo 3 botões (Pequena, Média e Grande) e uma imagem. Ao clicar no botão "Pequena", altere o tamanho da imagem para 100x100px. Ao clicar no botão "Média", altere o tamanho da imagem para 300x300px. Ao clicar no botão "Grande", altere o tamanho da imagem para 500x500px.
+			</div>
+			<div class="section">
+				<span class="btna" onclick="resize(100)">Pequena</span><span class="btna" onclick="resize(300)">Média</span><span class="btna" onclick="resize(500)">Grande</span>
+				<br><br><img src="../assets/img/city_skyline_bridge.jpg" width="100" height="100" id="img-r">
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

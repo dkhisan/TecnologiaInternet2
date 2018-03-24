@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício 04</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		var stat = false;
+
+		function active() {
+			if(!stat) {
+				document.querySelectorAll('p')[0].innerHTML = "Olá mundo";
+				stat = true;
+			} else {
+				document.querySelectorAll('p')[0].innerHTML = "";
+				stat = false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício 04</span><span class="btns" onclick="location.href='e05.html'">Próximo</span><span class="btns" onclick="location.href='e03.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Use o método "querySelectorAll" para encontrar o elemento &lt;p&gt; e mude seu texto para "Olá mundo".
+			</div>
+			<div class="section">
+				<span class="btna" onclick="active();">Ativar/desativ</span>
+				<p></p>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

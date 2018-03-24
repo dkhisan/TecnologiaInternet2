@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício 06</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		var stat = false;
+
+		function active() {
+			if(!stat) {
+				var p = document.getElementsByTagName('p');
+
+				for (var i = 0; i < p.length; i++) {
+					document.getElementsByTagName('p')[i].style.color = "#ff0000";
+				}
+
+				stat = true;
+			} else {
+				var p = document.getElementsByTagName('p');
+
+				for (var i = 0; i < p.length; i++) {
+					document.getElementsByTagName('p')[i].style.color = "#000";
+				}
+
+				stat = false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício 06</span><span class="btns" onclick="location.href='e07.html'">Próximo</span><span class="btns" onclick="location.href='e05.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Use o HTML DOM para definir a cor do texto de &lt;p&gt; para "vermelho".
+			</div>
+			<div class="section">
+				<span class="btna" onclick="active();">Ativar/desativ</span>
+				<p>Lorem ipsum dolor sit amet, in fugit ceteros pro. Veri iriure minimum in sea. Has habeo impetus inimicus ad, vix ex quando epicuri repudiandae, eos ei atqui aperiam labores. Pro cetero saperet id.</p>
+				
+				<p>Persecuti voluptaria has ut, sit facete causae corpora id. Vel elit altera splendide ex, dicat dicam verear sea ei. Aeque eligendi an mei, no per posse causae antiopam. Cu per debet solet facilisis, cum quot diceret honestatis ut, sea fugit regione ut.</p>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

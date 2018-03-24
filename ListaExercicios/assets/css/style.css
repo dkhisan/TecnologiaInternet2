@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,600,b');
+
+body {
+	background-color: #b3daff;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	width: 50%;
+	padding-bottom: 10px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+th:hover {
+	background-color: #f2f2f2;
+}
+
+img {
+	padding: 8px;
+}
+
+.pi {
+	padding-bottom: 10px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.pi:hover {
+	background-color: #f2f2f2;
+}
+
+td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+form {
+	padding: 5px;
+	font-size: 22px;
+	margin-left: 60px;
+	text-align: left;
+}
+
+input {
+	margin: 5px;
+}
+
+.head {
+	font-size: 22px;
+}
+
+.main {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+.content {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: left;
+}
+
+.list {
+	font-size: 22px;
+	padding: 20px;
+	text-align: center;
+}
+
+.desc {
+	background-color: #e6e6e6;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 60px;
+	margin-right: 60px;
+	padding: 8px;
+	font-size: 18px;
+	text-align: justify;
+    text-justify: inter-word;
+	color: #666;
+}
+
+.hl {
+	border: 2px solid #666;
+	border-radius: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #666;
+	color: #fff;
+	font-weight: bold;
+}
+
+.hx {
+	border: 2px solid #666;
+	border-radius: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #666;
+	color: #fff;
+	font-weight: bold;
+}
+
+.section {
+	padding: 40px;
+	text-align: center;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.about {
+	background-color: #e6e6e6;
+	border-radius: 8px;
+	padding: 40px;
+	text-align: center;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+p {
+	font-size: 22px;
+}
+
+hr {
+	width: 90%;
+}
+
+.cdiv {
+	width: 50%;
+}
+
+footer {
+	font-size: 12px;
+	text-align: right;
+	color: #cecece;
+}
+
+.btns {
+	border: 2px solid #7abbdb;
+	border-radius: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 5px;
+	background-color: #7abbdb;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+}
+
+.btne {
+	border: 2px solid #7abbdb;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.btne:hover {
+	background-color: #7abbdb;
+	color: #fff;
+}
+
+.btna {
+	font-size: 18px;
+	border: 2px solid #7abbdb;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.btna:hover {
+	background-color: #7abbdb;
+	color: #fff;
+}
+
+.btnel {
+	border: 2px solid #7abbdb;
+	background-color: #7abbdb;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.btnea {
+	border-top: 2px solid #7abbdb;
+	border-bottom: 2px solid #7abbdb;
+	border-left: 2px solid #7abbdb;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.btnea:hover {
+	background-color: #7abbdb;
+	color: #fff;
+}
+
+.btneb {
+	border: 2px solid #7abbdb;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.btneb:hover {
+	background-color: #7abbdb;
+	color: #fff;
+}
+
+.btnv {
+	border: 2px solid #7abbdb;
+	background-color: #7abbdb;
+	color: #fff;
+	border-radius: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.author {
+	font-weight: bold;
+}
+
+@media screen and (min-width: 200px) {
+	.main {
+		font-size: 22px;
+		padding: 5px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.main {
+		font-size: 28px;
+		padding: 5px;
+		margin-top: 4%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}

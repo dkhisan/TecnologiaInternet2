@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta charset="utf-8">
+	<title>Tecnologia p/ Internet II - {Aula 04} - Exercício 09</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+	<script type="text/javascript">
+		var stat = false;
+
+		function active() {
+			if(!stat) {
+				document.getElementsByTagName('p')[0].style.fontSize = "40px";
+				stat = true;
+			} else {
+				document.getElementsByTagName('p')[0].style.fontSize = "22px";
+				stat = false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="content">
+			<div class="head">
+				<span class="btnv" onclick="location.href='../index.html'">Início</span>
+				<span class="hx">Exercício 09</span><span class="btns" onclick="location.href='e10.html'">Próximo</span><span class="btns" onclick="location.href='e08.html'">Anterior</span>
+			</div>
+			<hr>
+			<div class="desc">
+				Use o DOM HTML para alterar o tamanho da fonte para 40px de &lt;p&gt;.
+			</div>
+			<div class="section">
+				<span class="btna" onclick="active()">Ativar/desativ</span>
+				<p>Lorem ipsum dolor sit amet, in fugit ceteros pro. Veri iriure minimum in sea. Has habeo impetus inimicus ad, vix ex quando epicuri repudiandae, eos ei atqui aperiam labores. Pro cetero saperet id.</p>
+			</div>
+			<hr>
+			<footer>
+				Feito por <span class="author" id="author">Hiago</span> S. Andrade
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
