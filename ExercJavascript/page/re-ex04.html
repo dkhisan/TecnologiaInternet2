@@ -1,0 +1,45 @@
+<script>
+    var dom = document.getElementById( "data_format" );
+
+    function imprimirData()
+    {
+        dom.innerHTML = formatarData();
+    }
+
+    function formatarData()
+    {
+        let data = document.getElementById( "data" ).value;
+        let tmp = data.split( "/", 3 );
+
+        return tmp[0].concat( " de " ).concat( escolherMesExtenso( parseInt( tmp[1] ) ) ).concat( " de " ).concat( tmp[2] );
+    }
+
+    function escolherMesExtenso(mes)
+    {
+        switch( mes )
+        {
+            case  1: return "janeiro";
+            case  2: return "fevereiro";
+            case  3: return "março";
+            case  4: return "abril";
+            case  5: return "maio";
+            case  6: return "junho";
+            case  7: return "julho";
+            case  8: return "agosto";
+            case  9: return "setembro";
+            case 10: return "outubro";
+            case 11: return "novembro";
+            case 12: return "dezembro";
+        }
+
+        return null;
+    }
+</script>
+
+<p>Informe a data <input type="text" id="data" placeholder="DD/MM/AAAA"></p>
+
+<div class="dbtn">
+    <span class="btn" onclick="imprimirData()">Enviar</span>
+</div>
+
+<p id="data_format"></p>

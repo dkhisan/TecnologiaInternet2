@@ -1,0 +1,49 @@
+<style>
+    table {
+        width: 100%;
+        text-align: center;
+    }
+
+    th {
+        width: 50%;
+    }
+
+    table, td {
+        border: 1px solid;
+    }
+</style>
+
+<script>
+    var tab = document.getElementsByTagName("table")[0];
+
+    function fazerOperacoes() {
+        imprimirElementos("2 + 1", 2 + 1);
+        imprimirElementos("2 x 1", 2 * 1);
+        imprimirElementos("2 / 1", 2 / 1);
+        imprimirElementos("2 % 1", 2 % 1);
+    }
+
+    function imprimirElementos(val1, val2) {
+        let tr  = document.createElement("tr");
+        let td1 = document.createElement("td");
+        let td2 = td1.cloneNode();
+
+        td1.textContent = val1;
+        td2.textContent = val2.toString();
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tab.appendChild(tr);
+    }
+</script>
+
+<div class="dbtn">
+    <span class="btn" onclick="fazerOperacoes()">Ativar</span>
+</div>
+
+<table>
+    <tr>
+        <th>Operação</th>
+        <th>Valor</th>
+    </tr>
+</table>

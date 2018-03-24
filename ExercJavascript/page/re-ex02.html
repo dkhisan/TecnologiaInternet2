@@ -1,0 +1,48 @@
+<script>
+    var dom = document.getElementById( "resultado" );
+
+    function calcularNota()
+    {
+        let total = 0.0;
+        let notas = [];
+        
+        if ( document.getElementsByTagName( "input")[4].value.length > 0 )
+        {
+            for( let i = 0; i < 5; i++ )
+            {
+                notas.push( parseFloat( document.getElementsByTagName( "input" )[i].value ) );
+            }
+        }
+        else
+        {
+            for( let i = 0; i < 4; i++ )
+            {
+                notas.push( parseFloat( document.getElementsByTagName( "input")[i].value ) );
+            }
+        }
+
+        notas.forEach(nota => {
+            total += nota;
+        });
+
+        imprimirResultado( total / notas.length, ( notas.length < 5 ? false : true ) );
+    }
+
+    function imprimirResultado( notaFinal, ficou )
+    {
+        dom.innerHTML = "             Nota final: ".concat( notaFinal.toFixed(1).toString() )
+                        .concat( "<br>Aluno " ).concat( (ficou ? "" : "não ") ).concat( "fez a prova final." );
+    }
+</script>
+
+<p>Informe a nota 1: <input type="text" required></p>
+<p>Informe a nota 2: <input type="text" required></p>
+<p>Informe a nota 3: <input type="text" required></p>
+<p>Informe a nota 4: <input type="text" required></p>
+<p>Informe a nota 5: <input type="text"></p>
+
+<div class="dbtn">
+    <span class="btn" onclick="calcularNota()">Enviar</span>
+</div>
+
+<p id="resultado"></p>

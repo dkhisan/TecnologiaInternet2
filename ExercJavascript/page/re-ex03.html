@@ -1,0 +1,45 @@
+<script>
+    const PERC_280  = 0.20;
+    const PERC_700  = 0.15;
+    const PERC_1500 = 0.10;
+    const PERC_HIGH = 0.05;
+
+    var dom = document.getElementById( "reajuste" );
+
+    function reajustarSalario()
+    {
+        let salarioAtual = parseFloat(document.getElementById("salario").value);
+
+        if ( salarioAtual <= 280.0 )
+        {
+            imprimirResultado( salarioAtual, salarioAtual * PERC_280, PERC_280 * 100 );
+        }
+        else if ( salarioAtual <= 700.0 )
+        {
+            imprimirResultado( salarioAtual, salarioAtual * PERC_700, PERC_700 * 100 );
+        }
+        else if ( salarioAtual <= 1500.0 )
+        {
+            imprimirResultado( salarioAtual, salarioAtual * PERC_1500, PERC_1500 * 100 );
+        }
+        else {
+            imprimirResultado( salarioAtual, salarioAtual * PERC_HIGH, PERC_HIGH * 100 );
+        }
+    }
+
+    function imprimirResultado( salarioAtual, incremento, percentual )
+    {
+        dom.innerHTML =          "    Salário antes do reajuste: $ ".concat( salarioAtual.toFixed( 2 ).toString())
+                        .concat( "<br>Percentual de reajuste: " ).concat( percentual.toString()).concat("%")
+                        .concat( "<br>Valor do reajuste: $ ").concat( incremento.toFixed( 2 ).toString())
+                        .concat( "<br>Salário após reajuste: $ ").concat( (salarioAtual + incremento).toFixed( 2 ).toString());
+    }
+</script>
+
+<p>Informe o salário atual <input type="text" id="salario" placeholder="200.00"></p>
+
+<div class="dbtn">
+    <span class="btn" onclick="reajustarSalario()">Reajustar</span>
+</div>
+
+<p id="reajuste"></p>
